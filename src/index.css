@@ -27,6 +27,12 @@
 html {
   font-size: 16px;
   /* Lenis injects smooth scroll via JS */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }
 
 body {
