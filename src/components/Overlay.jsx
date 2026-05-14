@@ -91,7 +91,7 @@ function Hero() {
         <div className="hero-stat-row" data-hero>
           {[
             { num: '3',   label: 'Internships' },
-            { num: '5',   label: 'Projects Built' },
+            { num: '6',   label: 'Projects Built' },
             { num: '1',   label: 'IJERT Publication' },
           ].map(s => (
             <div key={s.label}>
@@ -164,7 +164,7 @@ function About() {
               { label: 'AI / GenAI', val: 'LLM APIs · RAG · AI Agents · Prompt Engineering '  },
               { label: 'Backend',    val: 'Flask · FastAPI  · REST APIs' },
               { label: 'Frontend',   val: 'React · Vue.js · HTML/CSS' },
-              { label: 'Databases',  val: 'PostgreSQL · MongoDB · MySQL · Oracle' },
+              { label: 'Databases',  val: 'PostgreSQL · MongoDB · MySQL ' },
               { label: 'DevOps',     val: 'Docker · Git · CI/CD · GCP · AWS (In Progress)' },
             ].map(row => (
               <div key={row.label} style={{
@@ -193,13 +193,13 @@ function About() {
                 B.Tech Information Technology — SSN College, Chennai
               </p>
               <p style={{ fontSize:12, color:'var(--clr-muted)', marginBottom:10 }}>
-                CGPA 7.1 · Oct 2022 – May 2025
+                 Oct 2022 – May 2025
               </p>
               <p style={{ fontSize:13, color:'var(--clr-white)', marginBottom:4 }}>
                 Diploma in Information Technology — PSG Polytechnic, Coimbatore
               </p>
               <p style={{ fontSize:12, color:'var(--clr-muted)' }}>
-                86% · Aug 2019 – May 2022
+                 Aug 2019 – May 2022
               </p>
             </div>
           </div>
@@ -228,9 +228,9 @@ const EXPERIENCE = [
   {
     role:    'Automation & Python Developer',
     company: 'SocialSync Automation',
-    sub:     'Remote · United Kingdom',
+    sub:     '',
     period:  'Feb 2025 – Apr 2025',
-    location:'Remote',
+    location:'Remote · United Kingdom',
     bullets: [
       'Engineered Python-based REST API integration workflows, reducing manual data processing by ~70% — directly applicable to CRM data pipeline automation.',
       'Managed task orchestration in Unix/Linux environments, maintaining 99.9% uptime for production automation modules.',
@@ -293,36 +293,36 @@ function Experience() {
 // 4. PROJECTS  (Sri's 5 real projects + this portfolio)
 // ═══════════════════════════════════════════════════════════════════════
 const PROJECTS = [
-  {
+   {
     num:   '01',
-    title: 'ATS Pro',
-    desc:  'LLM-powered resume optimiser. Analyses job descriptions and generates ATS-optimised resumes using the Claude API with iterative prompt engineering and smart caching for single-API-call efficiency.',
-    stack: ['Python', 'Flask', 'Claude API', 'Prompt Engineering'],
+    title: "Sri's Innings",
+    desc:  "You're looking at it. Chepauk Stadium procedurally reconstructed in Three.js — no imported 3D assets. Scroll-driven cinematic camera, GSAP animations, Bloom post-processing. The portfolio IS the project.",
+    stack: ['React', 'Three.js / R3F', 'GSAP', 'Lenis'],
     year:  '2025',
-    link:  'https://github.com/Sivathandav',
+    link:  'https://github.com/Sivathandav/sri-innings.git',
   },
   {
     num:   '02',
-    title: 'FormSaathi',
-    desc:  'Conversational AI assistant for GST registration targeting India\'s MSME segment. Integrates LLM-driven dialogue, document upload, and session persistence. Demonstrated at VibeCon India (Y Combinator\'s Startup School India).',
-    stack: ['Python', 'FastAPI', 'Generative AI', 'LLM'],
-    year:  '2025',
-    link:  'https://github.com/Sivathandav',
-  },
-  {
-    num:   '03',
     title: 'TroubleTracker',
     desc:  'Centralised support platform with JWT-based secure authentication. Features structured ticket management, real-time status tracking, and performance dashboards — built during Cuvette Tech internship.',
     stack: ['React', 'Node.js', 'Express', 'MongoDB', 'JWT'],
     year:  '2025',
-    link:  'https://github.com/Sivathandav',
+    link:  'https://github.com/Sivathandav/TroubleTracker.git',
   },
   {
-    num:   '04',
+    num:   '03',
     title: 'TableEase',
     desc:  'Scalable restaurant reservation platform with automated conflict resolution. Optimised NoSQL queries and indexing reduced database latency by 35% under load — built during Cuvette Tech internship.',
     stack: ['React', 'Node.js', 'Express', 'MongoDB', 'Docker'],
     year:  '2025',
+    link:  'https://github.com/Sivathandav/Restaurant.git',
+  },
+  {
+    num:   '04',
+    title: "Recruiter Brain",
+    desc:  "An opinionated ATS Resume Optimizer designed for FAANG-level screening. Built with a focus on high-impact simplicity and NLP-driven scoring. Features structured LaTeX export and real-time feedback loops to bridge the gap between candidates and recruiters.",
+    stack: ['React', 'FastAPI', 'LiteLLM', 'ChromaDB', 'GSAP', 'LaTeX'],
+    year:  '2026',
     link:  'https://github.com/Sivathandav',
   },
   {
@@ -335,12 +335,13 @@ const PROJECTS = [
   },
   {
     num:   '06',
-    title: "Sri's Innings",
-    desc:  "You're looking at it. Chepauk Stadium procedurally reconstructed in Three.js — no imported 3D assets. Scroll-driven cinematic camera, GSAP animations, Bloom post-processing. The portfolio IS the project.",
-    stack: ['React', 'Three.js / R3F', 'GSAP', 'Lenis'],
-    year:  '2025',
-    link:  'https://github.com/Sivathandav',
-  },
+    title: "Project Roshambo",
+    desc:  "A high-fidelity reimagining of Stone-Paper-Scissors, moving beyond basic logic into a 'vibe-coded' interactive experience. Features reactive UI states, custom soundscapes, and refined animation sequences to turn a classic utility into a polished digital toy.",
+    stack: ['HTML5', 'CSS3', 'JavaScript', 'GSAP'],
+    year:  '2024',
+    link:  'https://github.com/Sivathandav/Stone-Paper-Scissors',
+  }
+ 
 ]
 
 function Projects() {
@@ -386,7 +387,7 @@ const SKILLS = [
   { label: 'LLM / Generative AI',        pct: 85 },
   { label: 'REST APIs (Flask / FastAPI)', pct: 84 },
   { label: 'SQL / PostgreSQL',            pct: 82 },
-  { label: 'JavaScript / React',          pct: 80 },
+  { label: 'JavaScript / React',          pct: 85 },
   { label: 'Node.js / Express',           pct: 83 },
   { label: 'Docker / DevOps',             pct: 79 },
 ]
@@ -405,7 +406,7 @@ function Skills() {
         onEnter: () => {
           barsRef.current.forEach(el => { if (el) el.classList.add('animate') })
           gsap.from(ref.current.querySelectorAll('[data-skill]'), {
-            y: 28, opacity: 0, duration: 0.65, stagger: 0.06, ease: 'power2.out',
+            y: 28, opacity: 1, duration: 0.65, stagger: 0.06, ease: 'power2.out',
           })
         },
       })
@@ -428,7 +429,7 @@ function Skills() {
           </p>
 
           <div style={{ marginTop:36, display:'flex', gap:14, flexWrap:'wrap' }} data-reveal>
-            {['Open to Work', 'Remote / Hybrid', 'Chennai · India'].map(badge => (
+            {['Open to Work', 'Chennai · India'].map(badge => (
               <span key={badge} style={{
                 fontFamily:'var(--font-mono)', fontSize:10,
                 letterSpacing:'0.1em', textTransform:'uppercase',
